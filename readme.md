@@ -9,7 +9,7 @@
 
 <br>
 <iframe width="420" height="315"
-src="docs/vidoes/IMG_7662.mov">
+src="file://docs/vidoes/IMG_7662.mov">
 </iframe>
 <br>
 </body>
