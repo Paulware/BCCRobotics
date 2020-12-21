@@ -10,7 +10,7 @@
 <br>
 <a href="https://youtu.be/5s7F5uljFIQ"><img src="docs/images/video1.jpg" width="550px"></a>
 <h1>Wiki</h1>
-<a href="docs/index.html">Documentation</a>
+<a href="https://paulware.github.io/BCCRobotics/">Documentation</a>
 <br>
 </body>
 </html>
