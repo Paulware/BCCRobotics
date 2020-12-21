@@ -8,7 +8,7 @@
 <a href="https://www.amazon.com/Waveshare-BBC-Micro-Built-Microphone/dp/B08P8GKDV9/ref=sr_1_5?dchild=1&keywords=micro+bit+speaker&qid=1608513456&sr=8-5"><img src="docs/images/microBit.jpg" width="200px"></a><br>
 
 <br>
-<a href="https://youtu.be/5s7F5uljFIQ"><img src="docs/images/video1.jpg"></a>
+<a href="https://youtu.be/5s7F5uljFIQ"><img src="docs/images/video1.jpg" width="250px"></a>
 
 <br>
 </body>
