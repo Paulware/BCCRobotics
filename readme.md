@@ -11,8 +11,10 @@
 This project will be based on the crawling device:<br>
 <a href="https://category.yahboom.net/products/spider-bit?_pos=1&_sid=b01ba5a2c&_ss=r"><img src="docs/images/yahboomSpider.jpg" width="500px"></a><br>
 <a href="https://category.yahboom.net/products/super-bit?_pos=1&_sid=eb0adc16e&_ss=r"><img src="docs/images/superBit.jpg" width="300px"></a><br>
+<a href="https://www.youtube.com/watch?v=a6OLxZTac7w">video</a><br>
 <h2>Project 3 Biped</h2>
 <a href="https://category.yahboom.net/products/biped-bit"><img src="docs/images/biped.jpg" width="400px"></a><br>
+<a href="https://youtu.be/c7Dsrjii4ow">video</a><br>
 <br>
 <h1>Wiki</h1>
 <a href="https://paulware.github.io/BCCRobotics/">Documentation</a>
