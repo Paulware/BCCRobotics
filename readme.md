@@ -20,7 +20,7 @@
 <a href="https://www.sparkfun.com/products/13988"><img src="docs/images/microbitBreakout.jpg" width="400px"></a><br>
 <img src="docs/images/nanoPower.jpg" width="400px"><br>
 <h1>Wiki</h1>
-<a href="https://paulware.github.io/BCCRobotics/">Documentation</a>
+<a href="https://paulware.github.io/BCCRobotics/">Lesson Plan</a>
 <br>
 </body>
 </html>
