@@ -8,7 +8,6 @@
 <a href="https://www.amazon.com/Waveshare-BBC-Micro-Built-Microphone/dp/B08P8GKDV9/ref=sr_1_5?dchild=1&keywords=micro+bit+speaker&qid=1608513456&sr=8-5"><img src="docs/images/microBit.jpg" width="200px"></a><br>
 <a href="https://youtu.be/5s7F5uljFIQ"><img src="docs/images/video1.jpg" width="550px"></a>
 <h2>Spider</h2>
-This project will be based on the crawling device:<br>
 <a href="https://category.yahboom.net/products/spider-bit?_pos=1&_sid=b01ba5a2c&_ss=r"><img src="docs/images/yahboomSpider.jpg" width="500px"></a><br>
 <a href="https://category.yahboom.net/products/super-bit?_pos=1&_sid=eb0adc16e&_ss=r"><img src="docs/images/superBit.jpg" width="300px"></a><br>
 <a href="https://www.youtube.com/watch?v=a6OLxZTac7w">video</a><br>
