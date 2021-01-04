@@ -1,0 +1,55 @@
+<h1>Send communication to an arduino from a micro-bit</h1>
+To send a command from a micro-bit to an arduino, connect the M8 (tx) pin on the micro-bit to the <br>
+D0 (rx) pin on the arduino nano.<br>
+Note:<br>
+&nbsp;&nbsp;<b>The printed circuit board in the video below has this connection already made.</b><br>
+<hr>
+<h2>Micro-bit code</h2>
+This code will output the character 'A' when the A button is pressed and 'B' when the B button is pressed<br>
+<img src="images/microbitCrossoverCode.jpg"><br>
+<h3>Javascript microbit code (Optional)</h3>
+<pre>
+input.onButtonPressed(Button.A, function () {
+    serial.writeLine("A")
+    basic.showIcon(IconNames.Yes)
+})
+input.onButtonPressed(Button.B, function () {
+    serial.writeLine("B")
+    basic.showIcon(IconNames.No)
+})
+serial.redirect(
+SerialPin.P8,
+SerialPin.P12,
+BaudRate.BaudRate115200
+)
+basic.showIcon(IconNames.Heart)
+basic.forever(function () {
+})
+</pre>
+<hr>
+<h2>Arduino code</h2>
+This code will respond to a character 'A' by turning off the little led connected to D13.<br>
+When a character 'B' is received it will turn on the little led.<br>
+<pre>
+unsigned long ledTimeout = 0;
+void setup() {
+   pinMode (13,OUTPUT);
+   digitalWrite (13,1);
+   Serial.begin (115200);
+}
+void loop() {
+  char ch;
+  if (Serial.available()) {
+    ch = Serial.read();
+    if (ch == 'A') {
+      digitalWrite (13,0);
+    } else if (ch == 'B') {
+      digitalWrite (13,1);
+    }
+  }
+}
+</pre>
+
+<a href="https://youtu.be/zlXlVAbVj-I"><img src="images/crossover.jpg" width="600px"></a><br>
+<hr>
+<img src="images/ironGolemRose.jpg">
