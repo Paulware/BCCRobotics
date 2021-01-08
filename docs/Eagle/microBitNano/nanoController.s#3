@@ -9803,6 +9803,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <text x="156.21" y="166.37" size="1.778" layer="91">Reset</text>
 <text x="199.39" y="166.37" size="1.778" layer="91">Reset</text>
 <text x="203.2" y="138.43" size="1.778" layer="91">3V3</text>
+<text x="179.07" y="128.27" size="1.778" layer="91">USB</text>
 </plain>
 <instances>
 <instance part="JP5" gate="G$1" x="175.26" y="153.67" smashed="yes" rot="R180">
@@ -10272,19 +10273,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="114.3" y1="242.57" x2="114.3" y2="254" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="1"/>
-<pinref part="P+4" gate="1" pin="VCC"/>
-<wire x1="91.44" y1="208.28" x2="88.9" y2="208.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="J6" gate="G$1" pin="20"/>
 <pinref part="P+1" gate="1" pin="VCC"/>
 <wire x1="63.5" y1="220.98" x2="50.8" y2="220.98" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J10" gate="G$1" pin="1"/>
-<pinref part="P+2" gate="1" pin="VCC"/>
-<wire x1="1.27" y1="171.45" x2="1.27" y2="181.61" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J17" gate="J$1" pin="2"/>
@@ -10472,11 +10463,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 </net>
 <net name="M8" class="0">
 <segment>
-<pinref part="JP5" gate="G$1" pin="14"/>
-<wire x1="165.1" y1="138.43" x2="153.67" y2="138.43" width="0.1524" layer="91"/>
-<label x="153.67" y="138.43" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="J6" gate="G$1" pin="11"/>
 <wire x1="50.8" y1="198.12" x2="59.69" y2="198.12" width="0.1524" layer="91"/>
 <label x="59.69" y="198.12" size="1.778" layer="95"/>
@@ -10493,11 +10479,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 </segment>
 </net>
 <net name="M16" class="0">
-<segment>
-<pinref part="JP5" gate="G$1" pin="15"/>
-<wire x1="165.1" y1="135.89" x2="153.67" y2="135.89" width="0.1524" layer="91"/>
-<label x="153.67" y="135.89" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="3"/>
 <wire x1="50.8" y1="177.8" x2="59.69" y2="177.8" width="0.1524" layer="91"/>
@@ -10742,6 +10723,27 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="LED3" gate="G$1" pin="1"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="184.15" y1="233.68" x2="184.15" y2="228.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="D11" class="0">
+<segment>
+<pinref part="JP5" gate="G$1" pin="14"/>
+<wire x1="165.1" y1="138.43" x2="158.75" y2="138.43" width="0.1524" layer="91"/>
+<label x="158.75" y="138.43" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D12" class="0">
+<segment>
+<pinref part="JP5" gate="G$1" pin="15"/>
+<wire x1="165.1" y1="135.89" x2="158.75" y2="135.89" width="0.1524" layer="91"/>
+<label x="158.75" y="135.89" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="J10" gate="G$1" pin="1"/>
+<wire x1="1.27" y1="181.61" x2="7.62" y2="181.61" width="0.1524" layer="91"/>
+<label x="7.62" y="181.61" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

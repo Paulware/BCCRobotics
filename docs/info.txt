@@ -1,0 +1,5 @@
+pins 1 and 2 are the dc motor
+https://www.instructables.com/How-to-use-LEGO-NXT-sensors-and-motors-with-a-non-/
+
+
+http://www.mindsensors.com/ev3-and-nxt/58-breadboard-connector-kit-for-nxt-or-ev3

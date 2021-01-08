@@ -1,10 +1,11 @@
 unsigned long ledTimeout = 0;
+int ledValue = 1;
 void setup() {
    pinMode (13,OUTPUT);
    digitalWrite (13,1);
    Serial.begin (115200);
    Serial.println ( "Ready" );
-   ledTimeout = millis() + 3000;
+   ledTimeout = 1;
 }
 
 void loop() {
@@ -19,8 +20,9 @@ void loop() {
   }
   if (ledTimeout) {
     if (millis() > ledTimeout) {
-       digitalWrite (13,0);
-       ledTimeout = 0;
+       digitalWrite (13,ledValue);
+       ledValue = 1 - ledValue;
+       ledTimeout = millis() + 500;
     }
   }
 }

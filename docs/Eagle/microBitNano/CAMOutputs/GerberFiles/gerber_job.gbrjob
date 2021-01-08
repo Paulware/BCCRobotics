@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-01-06T21:13:51Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "nanoController"
+        },
+        "Owner": "Paulware Paulware <paulware@hotmail.com>",
+        "Size": {
+            "X": 69.85,
+            "Y": 79.8576
+        }
+    }
+}
