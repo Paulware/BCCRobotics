@@ -10800,6 +10800,242 @@ Source: www.vishay.com .. rwm.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="diode" urn="urn:adsk.eagle:library:210">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DO41-7.6" urn="urn:adsk.eagle:footprint:43217/1" library_version="8">
+<description>&lt;b&gt;DO41&lt;/b&gt; 7.6mm x 2mm&lt;p&gt;
+Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
+<wire x1="2.082" y1="-0.92" x2="-2.082" y2="-0.92" width="0.1524" layer="21"/>
+<wire x1="2.082" y1="-0.92" x2="2.082" y2="0.92" width="0.1524" layer="21"/>
+<wire x1="-2.082" y1="0.92" x2="2.082" y2="0.92" width="0.1524" layer="21"/>
+<wire x1="-2.082" y1="0.92" x2="-2.082" y2="-0.92" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0" x2="2.494" y2="0" width="0.85" layer="51"/>
+<wire x1="-3.81" y1="0" x2="-2.519" y2="0" width="0.85" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="C" x="-3.81" y="0" drill="1.1" diameter="1.7"/>
+<pad name="A" x="3.81" y="0" drill="1.1" diameter="1.7"/>
+<text x="-2.032" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.032" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-0.95" x2="-1.143" y2="0.92" layer="21"/>
+<rectangle x1="2.082" y1="-0.425" x2="2.717" y2="0.425" layer="21"/>
+<rectangle x1="-2.717" y1="-0.425" x2="-2.082" y2="0.425" layer="21"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="DO41-7.6" urn="urn:adsk.eagle:package:43421/1" type="box" library_version="8">
+<description>DO41 7.6mm x 2mm
+Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
+<packageinstances>
+<packageinstance name="DO41-7.6"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="SCHOTTKY" urn="urn:adsk.eagle:symbol:43101/2" library_version="8">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1N581*" urn="urn:adsk.eagle:component:43644/3" prefix="D" library_version="8">
+<description>&lt;b&gt;1.0A SCHOTTKY BARRIER RECTIFIER&lt;/b&gt;&lt;p&gt;
+Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO41-7.6">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43421/1"/>
+</package3dinstances>
+<technologies>
+<technology name="7-B">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="7-T">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="8-B">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="8-T">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="9-B">
+<attribute name="POPULARITY" value="11" constant="no"/>
+</technology>
+<technology name="9-T">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="switch-omron" urn="urn:adsk.eagle:library:377">
+<description>&lt;b&gt;Omron Switches&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="B3F-10XX" urn="urn:adsk.eagle:footprint:27476/1" library_version="3">
+<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
+<wire x1="3.302" y1="-0.762" x2="3.048" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="3.302" y1="-0.762" x2="3.302" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="0.762" x2="3.302" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="0.762" x2="-3.048" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-3.302" y1="0.762" x2="-3.302" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-3.048" y1="-0.762" x2="-3.302" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.1524" layer="51"/>
+<wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="3.048" y1="-2.54" x2="3.048" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="3.048" x2="-3.048" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="-3.048" x2="-3.048" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.0508" layer="51"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.0508" layer="51"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="1.27" width="0.0508" layer="51"/>
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.0508" layer="51"/>
+<wire x1="-1.27" y1="3.048" x2="-1.27" y2="2.794" width="0.0508" layer="21"/>
+<wire x1="1.27" y1="2.794" x2="-1.27" y2="2.794" width="0.0508" layer="21"/>
+<wire x1="1.27" y1="2.794" x2="1.27" y2="3.048" width="0.0508" layer="21"/>
+<wire x1="1.143" y1="-2.794" x2="-1.27" y2="-2.794" width="0.0508" layer="21"/>
+<wire x1="1.143" y1="-2.794" x2="1.143" y2="-3.048" width="0.0508" layer="21"/>
+<wire x1="-1.27" y1="-2.794" x2="-1.27" y2="-3.048" width="0.0508" layer="21"/>
+<wire x1="2.54" y1="-3.048" x2="2.159" y2="-3.048" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="-3.048" x2="-2.159" y2="-3.048" width="0.1524" layer="51"/>
+<wire x1="-2.159" y1="-3.048" x2="-1.27" y2="-3.048" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="3.048" x2="-2.159" y2="3.048" width="0.1524" layer="51"/>
+<wire x1="2.54" y1="3.048" x2="2.159" y2="3.048" width="0.1524" layer="51"/>
+<wire x1="2.159" y1="3.048" x2="1.27" y2="3.048" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="3.048" x2="-1.27" y2="3.048" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="3.048" x2="-2.159" y2="3.048" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-3.048" x2="1.143" y2="-3.048" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-3.048" x2="2.159" y2="-3.048" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="-0.762" x2="3.048" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="0.762" x2="3.048" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-3.048" y1="-0.762" x2="-3.048" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-3.048" y1="0.762" x2="-3.048" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-2.159" x2="1.27" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="1.27" y1="2.286" x2="-1.27" y2="2.286" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="1.27" x2="-2.413" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="-0.508" x2="-2.413" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="0.508" x2="-2.159" y2="-0.381" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="1.778" width="0.1524" layer="21"/>
+<circle x="-2.159" y="-2.159" radius="0.508" width="0.1524" layer="51"/>
+<circle x="2.159" y="-2.032" radius="0.508" width="0.1524" layer="51"/>
+<circle x="2.159" y="2.159" radius="0.508" width="0.1524" layer="51"/>
+<circle x="-2.159" y="2.159" radius="0.508" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="0.635" width="0.0508" layer="51"/>
+<circle x="0" y="0" radius="0.254" width="0.1524" layer="21"/>
+<pad name="1" x="-3.2512" y="2.2606" drill="1.016" shape="long"/>
+<pad name="3" x="-3.2512" y="-2.2606" drill="1.016" shape="long"/>
+<pad name="2" x="3.2512" y="2.2606" drill="1.016" shape="long"/>
+<pad name="4" x="3.2512" y="-2.2606" drill="1.016" shape="long"/>
+<text x="-3.048" y="3.683" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.048" y="-5.08" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.318" y="1.651" size="1.27" layer="51" ratio="10">1</text>
+<text x="3.556" y="1.524" size="1.27" layer="51" ratio="10">2</text>
+<text x="-4.572" y="-2.794" size="1.27" layer="51" ratio="10">3</text>
+<text x="3.556" y="-2.794" size="1.27" layer="51" ratio="10">4</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="B3F-10XX" urn="urn:adsk.eagle:package:27496/1" type="box" library_version="3">
+<description>OMRON SWITCH</description>
+<packageinstances>
+<packageinstance name="B3F-10XX"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="TS2" urn="urn:adsk.eagle:symbol:27469/1" library_version="3">
+<wire x1="0" y1="1.905" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="1.905" x2="-3.175" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="-1.905" x2="-3.175" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="1.905" x2="-4.445" y2="0" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="0" x2="-4.445" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
+<circle x="0" y="-2.54" radius="0.127" width="0.4064" layer="94"/>
+<circle x="0" y="2.54" radius="0.127" width="0.4064" layer="94"/>
+<text x="-6.35" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-3.81" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="2" rot="R90"/>
+<pin name="S" x="0" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="S1" x="2.54" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="P1" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="2" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="10-XX" urn="urn:adsk.eagle:component:27498/2" prefix="S" uservalue="yes" library_version="3">
+<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="TS2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B3F-10XX">
+<connects>
+<connect gate="1" pin="P" pad="3"/>
+<connect gate="1" pin="P1" pad="4"/>
+<connect gate="1" pin="S" pad="1"/>
+<connect gate="1" pin="S1" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:27496/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="B3F-1000" constant="no"/>
+<attribute name="OC_FARNELL" value="176432" constant="no"/>
+<attribute name="OC_NEWARK" value="36M3542" constant="no"/>
+<attribute name="POPULARITY" value="72" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10831,11 +11067,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="P+3" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+6" library="SparkFun" deviceset="VCC" device=""/>
-<part name="J3" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="IR RX"/>
-<part name="P+7" library="SparkFun" deviceset="VCC" device=""/>
-<part name="GND6" library="SparkFun" deviceset="GND" device=""/>
-<part name="J4" library="SparkFun-Connectors" deviceset="CONN_02" device="" value="IR TX"/>
-<part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_01" device="SMTSO-256-ET-0.165DIA"/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="J5" library="SparkFun-Connectors" deviceset="CONN_01" device="SMTSO-256-ET-0.165DIA"/>
@@ -10896,6 +11127,11 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="GND22" library="SparkFun" deviceset="GND" device=""/>
 <part name="J30" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 <part name="J28" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
+<part name="J4" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
+<part name="J3" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
+<part name="PROTECT-MICROBIT" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N581*" device="" package3d_urn="urn:adsk.eagle:package:43421/1" technology="7-B"/>
+<part name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
+<part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10904,6 +11140,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <text x="199.39" y="166.37" size="1.778" layer="91">Reset</text>
 <text x="203.2" y="138.43" size="1.778" layer="91">3V3</text>
 <text x="179.07" y="128.27" size="1.778" layer="91">USB</text>
+<text x="217.17" y="163.83" size="1.778" layer="91">Add Diode to protect microbit here....</text>
 </plain>
 <instances>
 <instance part="JP5" gate="G$1" x="175.26" y="153.67" smashed="yes" rot="R180">
@@ -10934,25 +11171,8 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="GND5" gate="1" x="104.14" y="195.58" smashed="yes" rot="R270">
 <attribute name="VALUE" x="101.6" y="198.12" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="P+6" gate="1" x="209.55" y="163.83" smashed="yes" rot="R270">
-<attribute name="VALUE" x="213.106" y="164.846" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="J3" gate="J$1" x="106.68" y="256.54" smashed="yes">
-<attribute name="VALUE" x="104.14" y="249.174" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="104.14" y="262.128" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="P+7" gate="1" x="114.3" y="242.57" smashed="yes" rot="R180">
-<attribute name="VALUE" x="117.856" y="239.014" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="GND6" gate="1" x="125.73" y="256.54" smashed="yes" rot="R90">
-<attribute name="VALUE" x="128.27" y="254" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="J4" gate="G$1" x="144.78" y="256.54" smashed="yes">
-<attribute name="VALUE" x="142.24" y="251.714" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="142.24" y="262.128" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="GND7" gate="1" x="152.4" y="250.19" smashed="yes">
-<attribute name="VALUE" x="149.86" y="247.65" size="1.778" layer="96"/>
+<instance part="P+6" gate="1" x="213.36" y="156.21" smashed="yes" rot="R180">
+<attribute name="VALUE" x="214.376" y="152.654" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="J1" gate="G$1" x="81.28" y="218.44" smashed="yes">
 <attribute name="VALUE" x="78.74" y="213.614" size="1.778" layer="96" font="vector"/>
@@ -11158,13 +11378,32 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="GND22" gate="1" x="-13.97" y="298.45" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-11.43" y="300.99" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="J30" gate="G$1" x="7.62" y="170.18" smashed="yes">
-<attribute name="VALUE" x="5.08" y="165.354" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="5.08" y="173.228" size="1.778" layer="95" font="vector"/>
+<instance part="J30" gate="G$1" x="8.89" y="170.18" smashed="yes">
+<attribute name="VALUE" x="6.35" y="165.354" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="6.35" y="173.228" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J28" gate="G$1" x="8.89" y="160.02" smashed="yes">
 <attribute name="VALUE" x="6.35" y="155.194" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="6.35" y="163.068" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="J4" gate="G$1" x="88.9" y="200.66" smashed="yes" rot="R90">
+<attribute name="VALUE" x="93.726" y="198.12" size="1.778" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="85.852" y="198.12" size="1.778" layer="95" font="vector" rot="R90"/>
+</instance>
+<instance part="J3" gate="G$1" x="1.27" y="212.09" smashed="yes" rot="R90">
+<attribute name="VALUE" x="6.096" y="209.55" size="1.778" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="-1.778" y="209.55" size="1.778" layer="95" font="vector" rot="R90"/>
+</instance>
+<instance part="PROTECT-MICROBIT" gate="G$1" x="210.82" y="163.83" smashed="yes" rot="R180">
+<attribute name="NAME" x="242.316" y="163.195" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="213.106" y="167.259" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="S1" gate="1" x="226.06" y="227.33" smashed="yes">
+<attribute name="NAME" x="219.71" y="224.79" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="222.25" y="230.505" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND6" gate="1" x="231.14" y="215.9" smashed="yes" rot="R90">
+<attribute name="VALUE" x="233.68" y="213.36" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -11185,16 +11424,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="WIFI_RECEIVER" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="106.68" y1="195.58" x2="113.03" y2="195.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J3" gate="J$1" pin="2"/>
-<pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="123.19" y1="256.54" x2="114.3" y2="256.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J4" gate="G$1" pin="1"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="152.4" y1="252.73" x2="152.4" y2="256.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
@@ -11281,6 +11510,11 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="GND22" gate="1" pin="GND"/>
 <wire x1="-13.97" y1="295.91" x2="-13.97" y2="290.83" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="S1" gate="1" pin="P1"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="228.6" y1="215.9" x2="228.6" y2="222.25" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="D3" class="0">
 <segment>
@@ -11289,9 +11523,10 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="158.75" y="158.75" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="2"/>
-<wire x1="152.4" y1="259.08" x2="156.21" y2="259.08" width="0.1524" layer="91"/>
-<label x="156.21" y="259.08" size="1.778" layer="95"/>
+<pinref part="S1" gate="1" pin="S1"/>
+<wire x1="228.6" y1="232.41" x2="228.6" y2="240.03" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="240.03" x2="233.68" y2="240.03" width="0.1524" layer="91"/>
+<label x="233.68" y="240.03" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D5" class="0">
@@ -11403,16 +11638,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="113.03" y1="201.93" x2="113.03" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP7" gate="G$1" pin="12"/>
-<pinref part="P+6" gate="1" pin="VCC"/>
-<wire x1="209.55" y1="163.83" x2="198.12" y2="163.83" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J3" gate="J$1" pin="1"/>
-<pinref part="P+7" gate="1" pin="VCC"/>
-<wire x1="114.3" y1="242.57" x2="114.3" y2="254" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="J6" gate="G$1" pin="20"/>
 <pinref part="P+1" gate="1" pin="VCC"/>
 <wire x1="63.5" y1="220.98" x2="50.8" y2="220.98" width="0.1524" layer="91"/>
@@ -11466,6 +11691,11 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="J28" gate="G$1" pin="1"/>
 <pinref part="P+2" gate="1" pin="VCC"/>
 <wire x1="21.59" y1="160.02" x2="16.51" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="PROTECT-MICROBIT" gate="G$1" pin="A"/>
+<pinref part="P+6" gate="1" pin="VCC"/>
+<wire x1="213.36" y1="156.21" x2="213.36" y2="163.83" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D4" class="0">
@@ -11552,11 +11782,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="JP7" gate="G$1" pin="7"/>
 <wire x1="198.12" y1="151.13" x2="203.2" y2="151.13" width="0.1524" layer="91"/>
 <label x="203.2" y="151.13" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J3" gate="J$1" pin="3"/>
-<wire x1="114.3" y1="259.08" x2="118.11" y2="259.08" width="0.1524" layer="91"/>
-<label x="118.11" y="259.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D18" class="0">
@@ -11839,11 +12064,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="1.27" y="203.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J14" gate="G$1" pin="1"/>
-<wire x1="1.27" y1="219.71" x2="6.35" y2="219.71" width="0.1524" layer="91"/>
-<label x="6.35" y="219.71" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="J15" gate="G$1" pin="1"/>
 <wire x1="1.27" y1="236.22" x2="6.35" y2="236.22" width="0.1524" layer="91"/>
 <label x="6.35" y="236.22" size="1.778" layer="95"/>
@@ -11897,14 +12117,34 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="7.62" y="181.61" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="15.24" y1="170.18" x2="22.86" y2="170.18" width="0.1524" layer="91"/>
-<label x="22.86" y="170.18" size="1.778" layer="95"/>
 <pinref part="J30" gate="G$1" pin="1"/>
+<wire x1="16.51" y1="170.18" x2="22.86" y2="170.18" width="0.1524" layer="91"/>
+<label x="22.86" y="170.18" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="BATT3.7V" class="0">
 <segment>
 <pinref part="J5" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="208.28" x2="91.44" y2="208.28" width="0.1524" layer="91"/>
-<label x="91.44" y="208.28" size="1.778" layer="95"/>
+<wire x1="88.9" y1="208.28" x2="92.71" y2="208.28" width="0.1524" layer="91"/>
+<label x="92.71" y="208.28" size="1.778" layer="95"/>
+<pinref part="J4" gate="G$1" pin="1"/>
+<junction x="88.9" y="208.28"/>
+</segment>
+</net>
+<net name="BATT7.4V" class="0">
+<segment>
+<pinref part="J14" gate="G$1" pin="1"/>
+<wire x1="1.27" y1="219.71" x2="12.7" y2="219.71" width="0.1524" layer="91"/>
+<label x="12.7" y="219.71" size="1.778" layer="95"/>
+<pinref part="J3" gate="G$1" pin="1"/>
+<junction x="1.27" y="219.71"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="JP7" gate="G$1" pin="12"/>
+<pinref part="PROTECT-MICROBIT" gate="G$1" pin="C"/>
+<wire x1="208.28" y1="163.83" x2="198.12" y2="163.83" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

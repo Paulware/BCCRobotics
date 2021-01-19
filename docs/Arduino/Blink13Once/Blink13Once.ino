@@ -14,8 +14,10 @@ void loop() {
     ch = Serial.read();
     if (ch == 'A') {
       digitalWrite (13,0);
+      ledTimeout = 0;
     } else if (ch == 'B') {
       digitalWrite (13,1);
+      ledTimeout = 0;
     }
   }
   if (ledTimeout) {

@@ -1,15 +1,28 @@
 #include "IRTX.h"
+#define RED 5
+#define BLUE 10
+#define GREEN 9
 #define IRTRANSMIT 3
+
 IRTX ir (IRTRANSMIT);
 unsigned long fireTimeout = 0;
 unsigned long ledTimeout = 0;
 int ledValue = 1;
+
+void color(int pin) {
+  digitalWrite (BLUE, 1);
+  digitalWrite (GREEN, 1);
+  digitalWrite (RED, 1);
+
+  digitalWrite (pin, 0);
+}
 
 void fire() {
   Serial.println ( "Fire yo" );      
   ir.fireType = 7;
   fireTimeout = 1;
   ledTimeout = 1;
+  color (BLUE);
 }
 
 void setup() {
@@ -17,7 +30,13 @@ void setup() {
   pinMode (6,INPUT);
   digitalWrite (6,1); // pull-up
   Serial.begin (115200);  
+  pinMode (RED, OUTPUT);
+  pinMode (BLUE, OUTPUT);
+  pinMode (GREEN, OUTPUT);
   Serial.println ( "IR Transmit" );
+
+  // color (GREEN);  
+  fire();  
 }
 
 void loop() {

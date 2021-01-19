@@ -192,7 +192,7 @@
 VCC
 GND</text>
 <text x="23.622" y="20.828" size="1.9304" layer="121">1K</text>
-<text x="36.576" y="8.382" size="1.9304" layer="121">+</text>
+<text x="37.084" y="11.176" size="1.9304" layer="121">+</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">

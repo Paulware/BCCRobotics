@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2021-01-06T21:13:51Z",
+        "CreationDate": "2021-01-14T21:39:54Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -17,7 +17,7 @@
         },
         "Owner": "Paulware Paulware <paulware@hotmail.com>",
         "Size": {
-            "X": 69.85,
+            "X": 73.66,
             "Y": 79.8576
         }
     }
